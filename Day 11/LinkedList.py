@@ -41,6 +41,7 @@ class LinkedNode:
         newPrev = prev
         if(head is None or head.next is None):
             return prev
+        
         currHead = head.next
         while(currHead is not None):
             
@@ -82,20 +83,19 @@ class LinkedList:
             
     def reverse(self):
         prev = None
-        curr = self.head
+        curr = head
         next = None
         
         
-        if(curr is None):
-            return check
+        if(curr is None or curr.next is None):
+            return curr
         while(curr is not None):
             next = curr.next
             curr.next = prev
             prev = curr
             curr = next
             
-        self.head = prev
-            
+        return prev
        
         
      
