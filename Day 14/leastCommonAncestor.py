@@ -6,8 +6,7 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
-    def __init__(self):
-            self.parent = None
+    
     def lowestCommonAncestor(self, root, p, q):
         
         """
